@@ -1,3 +1,12 @@
+/*
+In the compile phase of our catalog-image-directive update the template by appending "<img src={ { item.img } } />" to the templateElement.
+
+In the preLink stage of our catalog-image-directive use our controllers fallbackImage method to replace any missing images .
+
+In the postLink stage of our catalog-image-directive add a class of 'onSale' to the 'elm' of any items that are in fact on sale.
+Hint: scope.item will change by the time we can detect this
+ */
+
 angular.module('APP')
 .directive('catalogImage', function(){
   'use strict';
