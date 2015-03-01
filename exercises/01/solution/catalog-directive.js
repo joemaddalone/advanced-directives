@@ -2,7 +2,7 @@ angular.module('APP')
 .directive('catalog', function(){
    return {
     controller: ['$scope', 'CatalogService', function($scope, catalogService){
-      this.catalog = catalogService.getCatalog();;
+      this.catalog = catalogService.getCatalog();
       this.calcPrice = function(item){
         if (item.cost*2 > 100){
           item.onSale = true;
