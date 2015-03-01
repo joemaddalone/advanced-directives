@@ -11,7 +11,7 @@
       {{item.qty}}
     </td>
     <td>
-      {{(item.price+item.size)*item.qty | currency}}
+      {{item.price*item.qty | currency}}
     </td>
   </tr>
 </table>
@@ -29,7 +29,7 @@
       {{::item.qty}}
     </td>
     <td>
-      {{::(item.price+item.size)*item.qty | currency}}
+      {{::item.price*item.qty | currency}}
     </td>
   </tr>
 </table>
