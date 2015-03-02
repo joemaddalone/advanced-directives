@@ -18,15 +18,15 @@ angular.module('APP',[])
 
 var compileFn = function(templateElement, templateAttributes) {
   /* compile phase */
-  console.log('compile', templateAttributes.$$element.attr('name'))
+  console.log('compile', templateAttributes.name)
   return {
     pre: function preLink(scope, elm, attrs, ctrl) {
       /* preLink phase */
-      console.log('preLink', attrs.name)
+      console.warn('preLink', attrs.name)
     },
     post: function postLink(scope, elm, attrs, ctrl){
       /* postLink phase */
-      console.log('postLink', attrs.name)
+      console.error('postLink', attrs.name)
     }
   }
 }
