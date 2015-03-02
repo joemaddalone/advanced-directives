@@ -7,7 +7,7 @@ angular.module('APP')
     transclude: 'element',
     priority: 1000,
     link: function(scope, el, attrs, ctrl, transclude){
-      var times = parseInt(scope.rating, 10);
+      var times = parseInt(scope.rating);
       var current = el;
       var cloneScope;
 

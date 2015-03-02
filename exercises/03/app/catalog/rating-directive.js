@@ -9,7 +9,8 @@ angular.module('APP')
   return {
     scope: {rating: "="},
     restrict: 'A',
-    link: function(scope, el, attrs, ctrl, transclude){
+    link: function(scope, elm, attrs, ctrl, transclude){
+      var times = parseInt(scope.rating);
 
     }
   }
