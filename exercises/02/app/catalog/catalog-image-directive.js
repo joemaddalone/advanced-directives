@@ -1,5 +1,5 @@
 /*
-In the compile phase of our catalog-image-directive update the template by appending "<img src={ { item.img } } />" to the templateElement.
+In the compile phase of our catalog-image-directive update the template by appending "<img ng-src={ { item.img } } />" to the templateElement.
 
 In the preLink stage of our catalog-image-directive use our controllers fallbackImage method to replace any missing images .
 

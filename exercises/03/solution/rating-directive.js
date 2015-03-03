@@ -5,7 +5,6 @@ angular.module('APP')
     scope: {rating: "="},
     restrict: 'A',
     transclude: 'element',
-    priority: 1000,
     link: function(scope, el, attrs, ctrl, transclude){
       var times = parseInt(scope.rating);
       var current = el;
@@ -13,7 +12,6 @@ angular.module('APP')
 
       for(var i = 0; i < times; i += 1){
         cloneScope = scope.$new();
-        cloneScope.$index = i;
 
         transclude(cloneScope, function(clone){
           current.after(clone);

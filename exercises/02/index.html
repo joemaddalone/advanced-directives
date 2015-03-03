@@ -15,7 +15,7 @@
     <div class="pull-right"><a class="btn btn-xs btn-default" href="solution.html">Solution</a></div>
     <hr />
     <ol>
-    <li>In the compile phase of our catalog-image-directive update the template by appending <code>"&lt;img src={ { item.img } }  />"</code> to the templateElement.</li>
+    <li>In the compile phase of our catalog-image-directive update the template by appending <code>"&lt;img ng-src={ { item.img } }  />"</code> to the templateElement.</li>
     <li>In the preLink stage of our catalog-image-directive use our controllers <code>fallbackImage</code> method to replace any missing images .</li>
     <li>In the postLink stage of our catalog-image-directive add a class of 'onSale' to the 'elm' of any items that are in fact on sale.<br /><i>Hint: scope.item will change by the time we can detect this</i></li>
     </ol>
